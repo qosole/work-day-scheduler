@@ -115,6 +115,28 @@ if (currentTime.format("H") >= 17 && currentTime.format("H") < 18) {
     projectInput8.css("background-color", "lightgray");
     projectInput9.css("background-color", "lightcoral");
 }
+if (currentTime.format("H") >= 18) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightgray");
+    projectInput6.css("background-color", "lightgray");
+    projectInput7.css("background-color", "lightgray");
+    projectInput8.css("background-color", "lightgray");
+    projectInput9.css("background-color", "lightgray");
+}
+if (currentTime.format("H") < 9) {
+    projectInput1.css("background-color", "lightgreen");
+    projectInput2.css("background-color", "lightgreen");
+    projectInput3.css("background-color", "lightgreen");
+    projectInput4.css("background-color", "lightgreen");
+    projectInput5.css("background-color", "lightgreen");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
 
 // Saving user input to local storage when save button is pressed
 var projectList = {
