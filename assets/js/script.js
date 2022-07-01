@@ -140,16 +140,38 @@ if (currentTime.format("H") < 9) {
 
 // Saving user input to local storage when save button is pressed
 var projectList = {
-    nine: JSON.parse(localStorage.getItem("projectList")).nine,
-    ten: JSON.parse(localStorage.getItem("projectList")).ten,
-    eleven: JSON.parse(localStorage.getItem("projectList")).eleven,
-    twelve: JSON.parse(localStorage.getItem("projectList")).twelve,
-    one: JSON.parse(localStorage.getItem("projectList")).one,
-    two: JSON.parse(localStorage.getItem("projectList")).two,
-    three: JSON.parse(localStorage.getItem("projectList")).three,
-    four: JSON.parse(localStorage.getItem("projectList")).four,
-    five: JSON.parse(localStorage.getItem("projectList")).five
+    nine: "",
+    ten: "",
+    eleven: "",
+    twelve: "",
+    one: "",
+    two: "",
+    three: "",
+    four: "",
+    five: ""
 };
+if (JSON.parse(localStorage.getItem("projectList")) == null) {
+    projectList.nine = "";
+    projectList.ten = "";
+    projectList.eleven = "";
+    projectList.twelve = "";
+    projectList.one = "";
+    projectList.two = "";
+    projectList.three = "";
+    projectList.four = "";
+    projectList.five = "";
+} else {
+    var savedProjects = JSON.parse(localStorage.getItem("projectList"));
+    projectList.nine = savedProjects.nine;
+    projectList.ten = savedProjects.ten;
+    projectList.eleven = savedProjects.eleven;
+    projectList.twelve = savedProjects.twelve;
+    projectList.one = savedProjects.one;
+    projectList.two = savedProjects.two;
+    projectList.three = savedProjects.three;
+    projectList.four = savedProjects.four;
+    projectList.five = savedProjects.five;
+}
 
 // Save button event handler
 saveButton.click(function(event) {
