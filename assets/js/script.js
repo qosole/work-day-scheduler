@@ -14,6 +14,108 @@ var saveButton = $('.btn');
 var currentDay = moment().format("MMM Do, YYYY")
 currentDayDisplay.text(currentDay);
 
+// Using Moment.js to change table color based on current time
+var currentTime = moment();
+if (currentTime.format("H") >= 9 && currentTime.format("H") < 10) {
+    projectInput1.css("background-color", "lightcoral");
+    projectInput2.css("background-color", "lightgreen");
+    projectInput3.css("background-color", "lightgreen");
+    projectInput4.css("background-color", "lightgreen");
+    projectInput5.css("background-color", "lightgreen");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 10 && currentTime.format("H") < 11) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightcoral");
+    projectInput3.css("background-color", "lightgreen");
+    projectInput4.css("background-color", "lightgreen");
+    projectInput5.css("background-color", "lightgreen");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 11 && currentTime.format("H") < 12) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightcoral");
+    projectInput4.css("background-color", "lightgreen");
+    projectInput5.css("background-color", "lightgreen");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 12 && currentTime.format("H") < 13) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightcoral");
+    projectInput5.css("background-color", "lightgreen");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 13 && currentTime.format("H") < 14) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightcoral");
+    projectInput6.css("background-color", "lightgreen");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 14 && currentTime.format("H") < 15) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightgray");
+    projectInput6.css("background-color", "lightcoral");
+    projectInput7.css("background-color", "lightgreen");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 15 && currentTime.format("H") < 16) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightgray");
+    projectInput6.css("background-color", "lightgray");
+    projectInput7.css("background-color", "lightcoral");
+    projectInput8.css("background-color", "lightgreen");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 16 && currentTime.format("H") < 17) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightgray");
+    projectInput6.css("background-color", "lightgray");
+    projectInput7.css("background-color", "lightgray");
+    projectInput8.css("background-color", "lightcoral");
+    projectInput9.css("background-color", "lightgreen");
+}
+if (currentTime.format("H") >= 17 && currentTime.format("H") < 18) {
+    projectInput1.css("background-color", "lightgray");
+    projectInput2.css("background-color", "lightgray");
+    projectInput3.css("background-color", "lightgray");
+    projectInput4.css("background-color", "lightgray");
+    projectInput5.css("background-color", "lightgray");
+    projectInput6.css("background-color", "lightgray");
+    projectInput7.css("background-color", "lightgray");
+    projectInput8.css("background-color", "lightgray");
+    projectInput9.css("background-color", "lightcoral");
+}
+
 // Saving user input to local storage when save button is pressed
 var projectList = {
     nine: JSON.parse(localStorage.getItem("projectList")).nine,
